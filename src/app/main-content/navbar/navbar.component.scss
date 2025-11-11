@@ -1,0 +1,100 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    .logo svg {
+      width: 64px;
+      height: 64px;
+      fill: #3dcfb6;
+      stroke: transparent;
+      transition: all 0.3s ease;
+    }
+
+    span {
+      font-size: 25px;
+      font-weight: bolder;
+      color: rgb(255, 255, 255);
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      .logo svg {
+        fill: transparent;
+        stroke: #3dcfb6;
+        stroke-width: 16px;
+        cursor: pointer;
+      }
+
+      span {
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 30px;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    &:hover::after {
+      content: "•";
+      color: #3dcfb6;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -25px;
+      font-size: 30px;
+    }
+    &:active {
+      color: #3dcfb6;
+    }
+  }
+
+  mat-button-toggle-group {
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 2px solid #3dcfb6;
+    padding: 0.5px;
+    &:hover {
+      border: 2px solid #fff;
+      cursor: pointer;
+    }
+  }
+
+  mat-button-toggle {
+    background-color: transparent;
+    color: #337c6f;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+  }
+
+  mat-button-toggle.mat-button-toggle-checked {
+    background-color: #3dcfb6;
+    color: #fff;
+    border-radius: 25px;
+  }
+}
