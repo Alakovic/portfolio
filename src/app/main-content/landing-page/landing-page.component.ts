@@ -12,5 +12,11 @@ import { NavbarComponent } from '../navbar/navbar.component';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
+ textArray: string[] = [
+  'Frontend Developer',
+  'Based in Köln',
+  'Open to work',
+  'Available for remote work'
+];
 
 }
