@@ -3,20 +3,15 @@ import { Component } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon'
 import { NavbarComponent } from '../navbar/navbar.component';
+import { MarqueeComponent } from './marquee/marquee.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [MatButtonModule,CommonModule,MatIconModule,NavbarComponent],
+  imports: [MatButtonModule,CommonModule,MatIconModule,NavbarComponent,MarqueeComponent],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
- textArray: string[] = [
-  'Frontend Developer',
-  'Based in Köln',
-  'Open to work',
-  'Available for remote work'
-];
 
 }
