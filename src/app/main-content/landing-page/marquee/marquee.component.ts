@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class MarqueeComponent {
    text: string[] = [
     'Frontend Developer',
-    'Based in Koln',
+    'Based in Köln',
     'Open to Work',
     'Available for remote work'
   ];
