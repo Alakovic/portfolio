@@ -49,6 +49,9 @@ section {
     flex-direction: column;
     margin-left: 350px;
     padding-top: 150px;
+     &:hover{
+        cursor:default;
+      }
   }
 
   .who {
@@ -61,7 +64,7 @@ section {
   mat-card {
     width: 500px;
     border: 1px solid #3dcfb6;
-    border-radius: 8px;
+    border-radius: 30px;
     background-color: #36514c;
     padding: 15px;
   }

@@ -1,0 +1,42 @@
+<section>
+  <div class="info">
+    <span class="tech">Technologies</span>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Skill Set</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <span class="about-me"
+          >I am dedicated developer focused on building modern,responsive web
+          applications. As a motivated career changer, I have quickly build a
+          solid foundation around component-based architecture and strong typing
+          using the Angular ecosystem.I deliver clean,maintainable
+          code,leveraging REST API integration and practical experience with
+          Firebase. The rapid pace of web development excites me, continuous
+          learning and adaptability are my top priorities, ensuring I quickly
+          evolve into a valuable team contributor.</span
+        >
+        <p>You need <span class="highlight">another skill?</span></p>
+        <span class="contact-me">
+          Feel free to contact me. I look forward to expanding on my previous
+          knowledge.
+        </span>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-stroked-button>
+          <a href="#"><span>Let's Talk</span></a>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="tech-icons-wrapper">
+    <div class="tech-icon-item" *ngFor="let tech of technologies; let isLast=last">
+      <div class="icon">
+        <img src="{{ tech.path }}" alt="" />
+      </div>
+      <div class="text">
+        <span>{{ tech.name }}</span>
+      </div>
+    </div>
+  </div>
+</section>
