@@ -1,0 +1,33 @@
+<section>
+  <div class="project-wrapp">
+    <div class="project-head">
+      <span>Portfolio</span>
+      <h1>Featured Projects</h1>
+      <span class="sub-text"
+        >Explore a section of my work here - Interact with <br />projects to see
+        my skills in action.
+      </span>
+    </div>
+    <div class="project-list">
+      <div
+        class="project-item"
+        *ngFor="let p of projects; let i = index"
+        (mouseover)="showImg(p.img, i)"
+        (mouseleave)="hideImg()"
+      >
+        <div class="project-name">
+          <span class="name">{{ p.name }}</span>
+        </div>
+        <div class="project-tech">
+          <ng-container *ngFor="let tech of p.tech; let last = last">
+            <span class="tech-name">{{ tech }}</span>
+            <span *ngIf="!last" class="separator"> | </span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project-img"  [ngClass]="{ 'active': currentImg }" [ngStyle]="{ 'top.px':280 + imgIndex * 70 }">
+    <img *ngIf="currentImg" [src]="currentImg" alt="project image" />
+  </div>
+</section>
