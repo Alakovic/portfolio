@@ -20,7 +20,7 @@
         </div>
         <div class="project-tech">
           <ng-container *ngFor="let tech of p.tech; let last = last">
-            <span class="tech-name">{{ tech }}</span>
+            <span class="tech-name">{{ tech.name }}</span>
             <span *ngIf="!last" class="separator"> | </span>
           </ng-container>
         </div>
