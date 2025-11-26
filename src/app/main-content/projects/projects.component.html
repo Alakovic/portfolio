@@ -14,6 +14,7 @@
         *ngFor="let p of projects; let i = index"
         (mouseover)="showImg(p.img, i)"
         (mouseleave)="hideImg()"
+        (click)="openOverlay(p)"
       >
         <div class="project-name">
           <span class="name">{{ p.name }}</span>
@@ -27,7 +28,17 @@
       </div>
     </div>
   </div>
-  <div class="project-img"  [ngClass]="{ 'active': currentImg }" [ngStyle]="{ 'top.px':280 + imgIndex * 70 }">
+  <div
+    class="project-img"
+    [ngClass]="{ active: currentImg }"
+    [ngStyle]="{ 'top.px': 280 + imgIndex * 70 }"
+  >
     <img *ngIf="currentImg" [src]="currentImg" alt="project image" />
   </div>
 </section>
+
+<app-single-project
+  *ngIf="selectedProject"
+  [project]="selectedProject"
+  (close)="closeOverlay()" >
+</app-single-project>
