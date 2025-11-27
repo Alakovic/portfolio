@@ -1,0 +1,16 @@
+section {
+  background-color: #292929;
+  padding: 80px 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .headline{
+    text-align: center;
+    color: #3dcfb6;
+    h1{
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    
+  }
+}

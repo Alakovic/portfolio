@@ -13,13 +13,14 @@
   background-size: cover;
   background-position: center;
   padding: 70px;
-  border-radius: 10px;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   width: 85%;
   gap: 80px;
+  border: #3dcfb6 solid 1px;
 
   .close-icon {
     color: white;
