@@ -27,12 +27,26 @@
         </div>
       </div>
       <div class="links">
-        <button><a [href]="project.github" target="_blank"><span>GitHub</span> </a></button>
-        <button><a [href]="project.demo" target="_blank"><span>Live Test</span> </a></button>
+        <button>
+          <a [href]="project.github" target="_blank"
+            ><span>GitHub</span
+            ><img src="assets/images/arrow_forward.png" alt="arrow" />
+          </a>
+        </button>
+        <button>
+          <a [href]="project.demo" target="_blank"
+            ><span>Live Test</span
+            ><img src="assets/images/arrow_forward.png" alt="arrow" />
+          </a>
+        </button>
       </div>
     </div>
     <div class="project-img">
       <img [src]="project.img" alt="{{ project.name }}" />
     </div>
+    <button class="next-project" (click)="onNext()">
+      <span>Next project</span
+      ><img src="assets/images/arrow_forward.png" alt="arrow" />
+    </button>
   </div>
 </div>

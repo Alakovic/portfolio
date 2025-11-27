@@ -72,4 +72,11 @@ export class ProjectsComponent {
   closeOverlay() {
     this.selectedProject = null; 
   }
+
+  nextProject(){
+    if(!this.selectedProject) return;
+    const currentIndex = this.projects.indexOf(this.selectedProject);
+    const nextIndex =(currentIndex + 1) % this.projects.length;
+    this.selectedProject = this.projects[nextIndex];
+  }
 }

@@ -12,9 +12,14 @@ import { Project } from '../../../interfaces/project_interface/project.interface
 export class SingleProjectComponent {
   @Input() project! : Project;
   @Output() close = new EventEmitter<void>();
+  @Output() next = new EventEmitter<void>();
 
   onClose(){
     this.close.emit();
+  }
+
+  onNext(){
+    this.next.emit();
   }
 
 }

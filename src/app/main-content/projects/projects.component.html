@@ -40,5 +40,7 @@
 <app-single-project
   *ngIf="selectedProject"
   [project]="selectedProject"
-  (close)="closeOverlay()" >
+  (close)="closeOverlay()"
+  (next)="nextProject()"
+>
 </app-single-project>
