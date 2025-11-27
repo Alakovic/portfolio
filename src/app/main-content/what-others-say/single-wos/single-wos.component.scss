@@ -1,0 +1,57 @@
+mat-card {
+  width: 550px;
+  background-color: #26524b;
+  border: 1px solid #3dcfb6;
+  border-radius: 20px;
+  padding: 25px;
+
+  mat-card-content {
+    font-family: "Karla Regular", "FiraCode Regular" !important;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  mat-mdc-card-content:first-child {
+    padding-top: 0;
+  }
+
+  .mat-mdc-card-content {
+    display: block;
+    padding: 0;
+  }
+
+  mat-card-footer {
+    padding-top: 15px;
+    .footer {
+      display: flex;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      font-weight: 100;
+
+      .line {
+        flex: 1;
+        height: 1px;
+        background-color: #fff;
+        max-width: 640px;
+      }
+
+      .line1 {
+        flex: 1;
+        height: 1px;
+        background-color: #fff;
+        max-width: 8px;
+      }
+
+      .name {
+        color: #fff;
+      }
+
+      .role {
+        color: #fff;
+      }
+    }
+  }
+}
