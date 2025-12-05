@@ -20,12 +20,12 @@ export class WhatOthersSayComponent {
     {
       name: 'André Zelmer',
       role: 'Join Team Member',
-      text: 'I worked with Zeljko on several projects. In the „Join“ project, he took over the area for managing tasks and delivered reliably. Technically very competent and absolutely uncomplicated as a person – that\'s exactly what you want in a team.',
+      text: "I worked with Zeljko on several projects. In the „Join“ project, he took over the area for managing tasks and delivered reliably. Technically very competent and absolutely uncomplicated as a person – that's exactly what you want in a team.",
     },
     {
-      name: 'Kyrylo Novikov',
+      name: 'Stefan Krischan',
       role: 'Join Team Member',
-      text: 'I had the pleasure of working with Zeljko on the “JOIN” Project  , and the collaboration was truly smooth and professional. He was responsible for the Board, where he excellently implemented the display and logic for moving tasks through all stages, from “To Do” to “Done.” His dedication, precision, and teamwork greatly contributed to the quality of the final product.',
+      text: 'I collaborated with Zeljko on the  „Join“ project. His technical competence and strong team-oriented mindset consistently contributed to the success of our work.',
     },
   ];
 
@@ -35,7 +35,13 @@ export class WhatOthersSayComponent {
     this.middleIndex = Math.floor(this.whatOthersSay.length / 2);
   }
 
-  goToSlide(index: number) {
-    this.middleIndex = index;
+  prevSlide() {
+    this.middleIndex =
+      (this.middleIndex - 1 + this.whatOthersSay.length) %
+      this.whatOthersSay.length;
+  }
+
+  nextSlide() {
+    this.middleIndex = (this.middleIndex + 1) % this.whatOthersSay.length;
   }
 }
