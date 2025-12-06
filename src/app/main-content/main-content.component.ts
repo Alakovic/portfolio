@@ -5,12 +5,13 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ReferenceComponent } from './reference/reference.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [CommonModule,LandingPageComponent,AboutMeComponent,TechnologiesComponent,ProjectsComponent,ReferenceComponent],
+  imports: [CommonModule,LandingPageComponent,AboutMeComponent,TechnologiesComponent,ProjectsComponent,ReferenceComponent,ContactComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

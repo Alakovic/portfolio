@@ -1,0 +1,37 @@
+section {
+  background-color: #292929;
+  padding: 80px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p,h1,h3{
+    color: #3dcfb6;
+  }
+
+  p{
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+
+  h1{
+    font-size: 80px;
+    font-weight:  900;
+    line-height: 70px;
+  }
+
+  h3{
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .text,.question{
+    color: #fff;
+    font-size: 17px;
+  }
+
+  span {
+    color: #3dcfb6;
+    font-weight: 500;
+  }
+}
