@@ -1,4 +1,4 @@
-export interface WhatOthersSay{
+export interface Reference{
     name:string;
     role:string;
     text:string;
