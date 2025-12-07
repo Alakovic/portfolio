@@ -2,30 +2,34 @@ section {
   background-color: #292929;
   padding: 80px 120px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
 
-  p,h1,h3{
+  p,
+  h1,
+  h3 {
     color: #3dcfb6;
   }
 
-  p{
+  p {
     font-size: 22px;
     padding-bottom: 15px;
   }
 
-  h1{
+  h1 {
     font-size: 80px;
-    font-weight:  900;
+    font-weight: 900;
     line-height: 70px;
   }
 
-  h3{
+  h3 {
     padding-top: 50px;
     padding-bottom: 20px;
   }
 
-  .text,.question{
+  .text,
+  .question {
     color: #fff;
     font-size: 17px;
   }
@@ -33,5 +37,130 @@ section {
   span {
     color: #3dcfb6;
     font-weight: 500;
+  }
+
+  .contact {
+    width: 45%;
+  }
+
+  .contact-form {
+    width: 45%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name,
+    .email,
+    .text {
+      border-top: #3dcfb6 1px solid;
+      border-bottom: #3dcfb6 1px solid;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .check {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      color: #000;
+      font-size: 15px;
+      cursor: pointer;
+      padding: 15px;
+      overflow: hidden;
+      border: 1px solid #fff;
+      background: transparent;
+      border-radius: 25px;
+
+      span {
+        color: #fff;
+        font-family: "Karla Regular" !important;
+      }
+    }
+
+    input,
+    textarea {
+      border: none;
+      outline: none;
+      background-color: #292929;
+    }
+
+    input::placeholder {
+      color: #fff;
+      font-size: 20px;
+      font-family: "Karla Regular" !important;
+    }
+
+    label {
+      color: #3dcfb6;
+      font-size: 30px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    textarea::placeholder {
+      color: #fff;
+      font-size: 18px;
+      font-family: "Karla Regular" !important;
+    }
+
+    .check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      label {
+        color: #fff;
+        font-size: 13px;
+      }
+
+      input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #3dcfb6;
+        background-color: #292929;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      input[type="checkbox"]:checked::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 4px;
+        width: 5px;
+        height: 8px;
+        border: solid #3dcfb6;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+
+      a {
+        color: #3dcfb6;
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
+          text-decoration: underline #3dcfb6;
+          text-underline-offset: 5px;
+        }
+      }
+    }
   }
 }

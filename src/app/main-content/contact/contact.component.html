@@ -1,29 +1,57 @@
 <section>
   <div class="contact">
     <p>Contact me</p>
-    <h1>Let's work <br> together</h1>
+    <h1>
+      Let's work <br />
+      together
+    </h1>
     <h3>Got a problem to solve?</h3>
     <p class="text">
       I'm excited to help bring your ideas to life! Whether it's a project, a
       challenge, or a role you have in mind, I'd love to hear from you. Let's
       create something amazing together.
     </p>
-    <p class="question">Need a Frontend developer?<span>Let's talk!</span></p>  
+    <p class="question">Need a Frontend developer?<span>Let's talk!</span></p>
   </div>
   <div class="contact-form">
-     <form>
+    <form>
+      <div class="name">
+        <label for="name">What's your name? </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name goes here"
+        />
+      </div>
 
-    <label for="name">What's your name? </label>
-    <input type="text" id="name" name="name" placeholder="Your name goes here">
+      <div class="email">
+        <label for="email">What's your email?</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="youremail@email.com"
+        />
+      </div>
 
-    <label for="email">What's your email?</label>
-    <input type="email" id="email" name="email" placeholder="youremail@email.com">
-
-    <label for="message">How can I help you? </label>
-    <textarea id="subject" name="subject" placeholder="Hello Zeljko, I am interested in..." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
+      <div class="text">
+        <label for="message">How can I help you? </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Hello Zeljko, I am interested in..."
+          style="height: 25px"
+        ></textarea>
+      </div>
+      <div class="check">
+        <input type="checkbox" name="agree" id="agree" />
+        <label for="agree"
+          >I've read the <a href="">privacy policy</a> and agree to the processing of my data
+          as outlined.</label
+        >
+      </div>
+      <button type="submit"><span>Say Hello ;)</span></button>
+    </form>
   </div>
 </section>
