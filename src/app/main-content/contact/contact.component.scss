@@ -107,6 +107,45 @@ section {
         color: #fff;
         font-family: "Karla Regular" !important;
       }
+
+      &:hover {
+        color: #3dcfb6;
+        border: 1px solid #3dcfb6;
+        cursor: pointer;
+      }
+
+      &:hover span {
+        color: #3dcfb6;
+        animation: slideLoop 3s linear infinite;
+      }
+
+      @keyframes slideLoop {
+        0% {
+          transform: translateX(0);
+        }
+
+        40% {
+          transform: translateX(-120%);
+          opacity: 1;
+        }
+
+        40.5% {
+          opacity: 0;
+        }
+
+        55% {
+          transform: translateX(120%);
+          opacity: 0;
+        }
+
+        56% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
     }
 
     input,
@@ -118,7 +157,6 @@ section {
         cursor: pointer;
       }
     }
-
 
     label {
       color: #3dcfb6;
