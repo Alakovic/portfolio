@@ -1,10 +1,22 @@
 section {
   background-color: #292929;
-  padding: 80px 120px;
+  padding: 80px 0;
   display: flex;
+  justify-content: center;
   align-items: flex-start;
 
+  .section-wrapper {
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+  }
+
   .info {
+    flex: 1 1 500px; 
+    max-width: 500px;
     display: flex;
     flex-direction: column;
 
@@ -16,7 +28,7 @@ section {
     }
 
     mat-card {
-      width: 500px;
+      width: 100%;
       border: 1px solid #3dcfb6;
       border-radius: 30px;
       background-color: #36514c;
@@ -123,10 +135,12 @@ section {
   }
 
   .tech-icons-wrapper {
+    flex: 1 1 600px; 
+    max-width: 600px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
-    padding-left: 270px;
+    justify-items: center;
 
     .tech-icon-item {
       display: flex;
@@ -146,11 +160,9 @@ section {
       height: 60px;
       width: 60px;
       transition: transform 0.25s ease;
-      &:hover{
+      &:hover {
         transform: scale(1.1);
       }
     }
-
-    
   }
 }

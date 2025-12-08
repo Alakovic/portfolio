@@ -1,14 +1,23 @@
 section {
-  background-color: #292929;
-  padding: 80px 120px;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  background-color: #292929;
+  padding: 80px 0;
+
+  .section-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
 
   .image-box {
+    flex: 1 1 550px;
+    max-width: 550px;
     position: relative;
-    width: 600px;
-    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,13 +54,15 @@ section {
   }
 
   .info {
+    flex: 1 1 600px;
+    max-width: 600px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    margin-left: 350px;
-    padding-top: 150px;
-     &:hover{
-        cursor:default;
-      }
+
+    &:hover {
+      cursor: default;
+    }
   }
 
   .who {
@@ -62,7 +73,7 @@ section {
   }
 
   mat-card {
-    width: 500px;
+    width: 600px;
     border: 1px solid #3dcfb6;
     border-radius: 30px;
     background-color: #36514c;
@@ -85,8 +96,8 @@ section {
 
   .info-row {
     display: flex;
-    align-items:  flex-start;
-    margin-bottom: 8px;
+    align-items: flex-start;
+    margin-bottom: 30px;
 
     .info-icon {
       width: 24px;
@@ -96,11 +107,11 @@ section {
 
     span {
       display: inline-block;
-      color:#969F9D;
+      color: #969f9d;
 
-      &:hover{
+      &:hover {
         color: #fff;
-        cursor:default;
+        cursor: default;
       }
     }
   }

@@ -1,9 +1,17 @@
 section {
   background-color: #292929;
-  padding: 30px 120px;
+  padding: 30px 20px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  .section-wrapper {
+    width: 100%;
+    max-width: 1440px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px;
+  }
 
   .left,
   .right {
@@ -15,6 +23,7 @@ section {
 
   .midd {
     color: #3dcfb6;
+    align-self: center; 
   }
 
   .right a {
