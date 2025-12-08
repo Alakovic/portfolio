@@ -4,12 +4,12 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle'
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-header',
   standalone: true,
   imports: [CommonModule,MatButtonModule,MatButtonToggleModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class NavbarComponent {
+export class HeaderComponent {
 
 }
