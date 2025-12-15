@@ -6,9 +6,9 @@ section {
 
   .section-wrapper {
     width: 100%;
-    max-width: 1440px; 
+    max-width: 1440px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
   }
@@ -21,9 +21,13 @@ section {
     gap: 5px;
   }
 
+  .right{
+    align-self: end;
+  }
+ 
   .midd {
     color: #3dcfb6;
-    align-self: center; 
+    align-self: center;
   }
 
   .right a {
