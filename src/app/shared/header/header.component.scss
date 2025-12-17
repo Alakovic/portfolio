@@ -15,6 +15,10 @@ nav {
     align-items: center;
   }
 
+  a.right {
+    text-decoration: none;
+  }
+
   .right {
     display: flex;
     align-items: center;
@@ -86,23 +90,23 @@ nav {
     align-items: center;
     font-size: 20px;
     gap: 30px;
-  }
 
-  a {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    &:hover::after {
-      content: "•";
-      color: #3dcfb6;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -25px;
-      font-size: 30px;
-    }
-    &:active {
-      color: #3dcfb6;
+    a {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      &:hover::after {
+        content: "•";
+        color: #3dcfb6;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -25px;
+        font-size: 30px;
+      }
+      &:active {
+        color: #3dcfb6;
+      }
     }
   }
 
