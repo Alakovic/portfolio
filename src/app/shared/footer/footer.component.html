@@ -1,4 +1,4 @@
-<section>
+<section [ngClass]="{'gray-background': isLandingPage, 'transparent-background': !isLandingPage}">
   <div class="section-wrapper">
     <div class="left">
       <div class="logo-container" (click)="goToLanding()">

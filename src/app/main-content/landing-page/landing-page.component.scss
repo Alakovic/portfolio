@@ -1,13 +1,10 @@
 section {
   position: relative;
   height: 100vh;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("./../../../assets/images/background.png");
 
  .section-wrapper {
   max-width: 1440px;

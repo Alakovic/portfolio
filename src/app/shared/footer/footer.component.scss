@@ -1,8 +1,15 @@
 section {
-  background-color: #292929;
   padding: 30px 20px;
   display: flex;
   justify-content: center;
+
+  &.gray-background {
+    background-color:  #292929;
+  }
+
+  &.transparent-background {
+    background-color: transparent;
+  }
 
   .section-wrapper {
     width: 100%;
@@ -21,10 +28,10 @@ section {
     gap: 5px;
   }
 
-  .right{
+  .right {
     align-self: end;
   }
- 
+
   .midd {
     color: #3dcfb6;
     align-self: center;
@@ -59,7 +66,7 @@ section {
   .logo-container {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
     .logo-letters {
       position: relative;
