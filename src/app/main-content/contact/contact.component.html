@@ -14,42 +14,97 @@
     <p class="question">Need a Frontend developer?<span>Let's talk!</span></p>
   </div>
   <div class="contact-form">
-    <form>
-      <div class="name">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      <div
+        class="name"
+        [class.has-error]="
+          !name.valid && (name.touched || contactForm.submitted)
+        "
+      >
         <label for="name">What's your name? </label>
         <input
+          #name="ngModel"
+          [(ngModel)]="contactData.name"
           type="text"
           id="name"
           name="name"
           placeholder="Your name goes here"
+          required
         />
+        <span
+          class="error"
+          *ngIf="!name.valid && (name.touched || contactForm.submitted)"
+        >
+          Ooops! It seems your name is missing
+        </span>
       </div>
 
-      <div class="email">
+      <div
+        class="email"
+        [class.has-error]="
+          !email.valid && (email.touched || contactForm.submitted)
+        "
+      >
         <label for="email">What's your email?</label>
         <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
           type="email"
           id="email"
           name="email"
           placeholder="youremail@email.com"
+          required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
+        <span
+          class="error"
+          *ngIf="!email.valid && (email.touched  || contactForm.submitted) && !email.dirty"
+        >
+          Hoppla! Your email is required
+        </span>
       </div>
 
-      <div class="text">
+      <div
+        class="text"
+        [class.has-error]="
+          !message.valid && (message.touched || contactForm.submitted)
+        "
+      >
         <label for="message">How can I help you? </label>
         <textarea
+          #message="ngModel"
+          minlength="4"
+          [(ngModel)]="contactData.message"
           id="message"
           name="message"
           placeholder="Hello Zeljko, I am interested in..."
           style="height: 25px"
+          required
         ></textarea>
-      </div>
-      <div class="check">
-        <input type="checkbox" name="agree" id="agree" />
-        <label for="agree"
-          >I've read the <a href="">privacy policy</a> and agree to the processing of my data
-          as outlined.</label
+        <span
+          class="error"
+          *ngIf="!message.valid && (message.touched || contactForm.submitted)"
         >
+          What do you need to develop?
+        </span>
+      </div>
+      <div
+        class="check"
+        [class.has-error]="!contactData.agree && contactForm.submitted"
+      >
+        <input
+          type="checkbox"
+          name="agree"
+          id="agree"
+          [(ngModel)]="contactData.agree"
+        />
+        <label for="agree"
+          >I've read the <a href="imprint">privacy policy</a> and agree to the
+          processing of my data as outlined.</label
+        >
+        <span class="error" *ngIf="!contactData.agree && contactForm.submitted">
+          Please accpet the privacy policy.
+        </span>
       </div>
       <button type="submit"><span>Say Hello ;)</span></button>
     </form>
