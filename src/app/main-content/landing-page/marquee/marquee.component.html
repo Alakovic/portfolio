@@ -1,8 +1,8 @@
 <div class="marquee-outer">
   <div class="marquee-container">
     <div class="marquee-content">
-      <span *ngFor="let txt of text" class="marquee-item">{{ txt }}</span>
-      <span *ngFor="let txt of text" class="marquee-item">{{ txt }}</span>
+      <span *ngFor="let txt of text$ | async" class="marquee-item">{{ txt }}</span>
+      <span *ngFor="let txt of text$ | async" class="marquee-item">{{ txt }}</span>
     </div>
   </div>
 </div>

@@ -1,0 +1,19 @@
+{
+  "NAVBAR": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projekte"
+  },
+  "LANDINGPAGE": {
+    "CHECK": "Meine Projekte",
+    "CONTACT": "Kontakt"
+  },
+  "MARQUEE": {
+    "ITEMS": [
+      "Verfügbar für Remote-Arbeit",
+      "Frontend-Entwickler",
+      "Mit Sitz in Köln",
+      "Offen für neue Projekte"
+    ]
+  }
+}

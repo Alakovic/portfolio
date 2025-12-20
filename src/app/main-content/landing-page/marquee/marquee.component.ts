@@ -1,18 +1,19 @@
-import { CommonModule } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-marquee',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,AsyncPipe],
   templateUrl: './marquee.component.html',
   styleUrls: ['./marquee.component.scss']
 })
 export class MarqueeComponent {
-   text: string[] = [
-    'Frontend Developer',
-    'Based in Köln',
-    'Open to Work',
-    'Available for remote work'
-  ];
+
+   text$ = this.translate.stream('MARQUEE.ITEMS');
+
+  constructor(private translate: TranslateService) {}
+
+  
 }

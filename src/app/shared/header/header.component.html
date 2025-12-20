@@ -1,13 +1,17 @@
 <nav>
   <div class="container">
     <div class="left">
-      <mat-button-toggle-group name="language" value="en" appearance="legacy">
+      <mat-button-toggle-group 
+      name="language" 
+      [value]="languageService.currentLang"
+      (change)="changeLanguage($event.value)" 
+      appearance="legacy">
         <mat-button-toggle value="en">EN</mat-button-toggle>
         <mat-button-toggle value="de">DE</mat-button-toggle>
       </mat-button-toggle-group>
-      <a href="#about_me">About me</a>
-      <a href="#technologies">Skills</a>
-      <a href="#project">Projects</a>
+      <a href="#about_me">{{ 'NAVBAR.ABOUT' | translate }}</a>
+      <a href="#technologies">{{ 'NAVBAR.SKILLS' | translate }}</a>
+      <a href="#project">{{ 'NAVBAR.PROJECTS' | translate }}</a>
     </div>
     <a class="right" [routerLink]="'/'">
       <div class="logo-container">
@@ -22,4 +26,4 @@
       </div>
     </a>
   </div>
-</nav> 
+</nav>
