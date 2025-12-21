@@ -6,14 +6,86 @@
   },
   "LANDINGPAGE": {
     "CHECK": "Check my work",
-    "CONTACT": "Contact me"
+    "CONTACT": "Contact me",
+    "FRONTEND": "Frontend Developer"
   },
   "MARQUEE": {
     "ITEMS": [
       "Available for remote work",
       "Frontend Developer",
       "Based in Köln",
-      "Offen für neue Projekte"
+      "Open to work"
+    ]
+  },
+  "ABOUT_ME": {
+    "WHO": "Who I am",
+    "TITLE": "About me",
+    "SUBTITLE": "Hy there, I'm Zeljko! I'm passionate about coding, eager to learn new technologies, and constantly improving my skills",
+    "LOCATION": "Live in Köln. Open to remote,hybrid and in-office work, and I'm flexible to adapt to different working environments.",
+    "HEAD": "I am open-minded and always enthusiastic about learning new technologies and continually improving my skills",
+    "CHECK": "My problem-solving approach is based on analytical thinking,creativity and persistence.I learn from every challenge and constantly aim to find solutions that are both efficient and elegant.I believe in collaboration and see each obstacle as an opportunity to improve and expand my skills"
+  },
+  "TECHNOLOGIES": {
+    "TECH": "Technologies",
+    "TITLE": "Skill Set",
+    "CONTENT": "I am dedicated developer focused on building modern,responsive web applications. As a motivated career changer, I have quickly build a solid foundation around component-based architecture and strong typing using the Angular ecosystem.I deliver clean,maintainable code,leveraging REST API integration and practical experience with Firebase. The rapid pace of web development excites me, continuous learning and adaptability are my top priorities, ensuring I quickly evolve into a valuable team contributor.",
+    "QUESTION_WHITE": "You need",
+    "QUESTION_GREEN": "another skill?",
+    "INVITE": " Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "CONTACT": "Let's Talk"
+  },
+  "PROJECTS": {
+    "TITLE": "Projekte im Fokus",
+    "SUBTITLE": "Entdecken Sie hier einen Abschnitt meiner Arbeiten - interagieren Sie  \n mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "ITEMS": [
+      {
+        "ID": "01",
+        "NAME": "Join",
+        "DESCRIPTION": "Taskmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+        "TECH": [
+          {
+            "NAME": "HTML",
+            "IMG": "assets/images/tech_overlay/html_overlay.png"
+          },
+          {
+            "NAME": "CSS",
+            "IMG": "assets/images/tech_overlay/css_overlay.png"
+          },
+          {
+            "NAME": "JavaScript",
+            "IMG": "assets/images/tech_overlay/js_overlay.png"
+          },
+          {
+            "NAME": "Firebase",
+            "IMG": "assets/images/tech_overlay/firebase_overlay.png"
+          }
+        ],
+        "GITHUB": "https://github.com/Alakovic/join_v2",
+        "DEMO": "https://zeljko-alakovic.developerakademie.net/join_v2/",
+        "IMG": "assets/images/projects/join.png"
+      },
+      {
+        "ID": "02",
+        "NAME": "Sharky",
+        "DESCRIPTION": "Spiel basierend auf objektorientiertem Ansatz. Hilf Sharky, durch verschiedene Gegner zu kommen, alle Münzen und giftigen Trank zu finden, um gegen den großen verrückten Hai zu kämpfen.",
+        "TECH": [
+          {
+            "NAME": "HTML",
+            "IMG": "assets/images/tech_overlay/html_overlay.png"
+          },
+          {
+            "NAME": "CSS",
+            "IMG": "assets/images/tech_overlay/css_overlay.png"
+          },
+          {
+            "NAME": "JavaScript",
+            "IMG": "assets/images/tech_overlay/js_overlay.png"
+          }
+        ],
+        "GITHUB": "https://github.com/Alakovic/Sharky---THE-GAME",
+        "DEMO": "https://zeljko-alakovic.developerakademie.net/Sharky---THE-GAME/",
+        "IMG": "assets/images/projects/sharky.png"
+      }
     ]
   }
 }

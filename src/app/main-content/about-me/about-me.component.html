@@ -4,13 +4,12 @@
       <img src="assets/images/profile.jpg" alt="" />
     </div>
     <div class="info">
-      <span class="who">Who I am</span>
+      <span class="who">{{ "ABOUT_ME.WHO" | translate }}</span>
       <mat-card>
         <mat-card-header>
-          <mat-card-title> About me </mat-card-title>
+          <mat-card-title> {{ "ABOUT_ME.TITLE" | translate }} </mat-card-title>
           <mat-card-subtitle>
-            Hy there, I'm Zeljko! I'm passionate about coding, eager to learn
-            new technologies, and constantly improving my skills.
+            {{ "ABOUT_ME.SUBTITLE" | translate }}
           </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
@@ -21,8 +20,7 @@
               class="info-icon"
             />
             <span
-              >Live in Köln. Open to remote,hybrid and in-office work, and I'm
-              flexible to adapt to different working environments.
+              >{{'ABOUT_ME.LOCATION' | translate}}
             </span>
           </div>
           <div class="info-row">
@@ -32,8 +30,7 @@
               class="info-icon"
             />
             <span
-              >I am open-minded and always enthusiastic about learning new
-              technologies and continually improving my skills</span
+              >{{'ABOUT_ME.HEAD' | translate}}</span
             >
           </div>
           <div class="info-row">
@@ -43,11 +40,7 @@
               class="info-icon"
             />
             <span
-              >My problem-solving approach is based on analytical thinking,
-              creativity and persistence.I learn from every challenge and
-              constantly aim to find solutions that are both efficient and
-              elegant.I believe in collaboration and see each obstacle as an
-              opportunity to improve and expand my skills</span
+              >{{'ABOUT_ME.CHECK' | translate}}</span
             >
           </div>
         </mat-card-content>

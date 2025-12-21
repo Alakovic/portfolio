@@ -6,7 +6,8 @@
   },
   "LANDINGPAGE": {
     "CHECK": "Meine Projekte",
-    "CONTACT": "Kontakt"
+    "CONTACT": "Kontakt",
+    "FRONTEND": "Frontend Entwickler"
   },
   "MARQUEE": {
     "ITEMS": [
@@ -14,6 +15,77 @@
       "Frontend-Entwickler",
       "Mit Sitz in Köln",
       "Offen für neue Projekte"
+    ]
+  },
+  "ABOUT_ME": {
+    "WHO": "Wer ich bin",
+    "TITLE": "Über mich",
+    "SUBTITLE": "Hallo, ich bin Željko! Ich begeistere mich für Programmieren, lerne gerne neue Technologien und verbessere ständig meine Fähigkeiten.",
+    "LOCATION": "Ich lebe in Köln. Ich bin offen für Remote-, Hybrid- und Büroarbeit und flexibel, mich an unterschiedliche Arbeitsumgebungen anzupassen.",
+    "HEAD": "Ich bin aufgeschlossen und stets begeistert davon, neue Technologien zu erlernen und meine Fähigkeiten kontinuierlich zu verbessern.",
+    "CHECK": "Mein Ansatz zur Problemlösung basiert auf analytischem Denken, Kreativität und Ausdauer. Ich lerne aus jeder Herausforderung und strebe stets danach, Lösungen zu finden, die sowohl effizient als auch elegant sind. Ich glaube an Zusammenarbeit und sehe jedes Hindernis als Chance, mich weiterzuentwickeln und meine Fähigkeiten zu erweitern."
+  },
+  "TECHNOLOGIES": {
+    "TECH": "Technologien",
+    "TITLE": "Kompetenzen",
+    "CONTENT": "Ich bin ein engagierter Entwickler mit Fokus auf die Entwicklung moderner, responsiver Webanwendungen. Als motivierter Quereinsteiger habe ich mir schnell eine solide Grundlage in komponentenbasierter Architektur und starker Typisierung innerhalb des Angular-Ökosystems aufgebaut. Ich liefere sauberen, wartbaren Code und nutze dabei REST-API-Integrationen sowie praktische Erfahrung mit Firebase. Das hohe Entwicklungstempo der Webentwicklung begeistert mich; kontinuierliches Lernen und Anpassungsfähigkeit haben für mich höchste Priorität, sodass ich mich schnell zu einem wertvollen Mitglied jedes Teams entwickle.",
+    "QUESTION_WHITE": "Benötigen Sie noch eine",
+    "QUESTION_GREEN": "weitere Kompetenz?",
+    "INVITE": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+    "CONTACT": "Kontakt aufnehmen"
+  },
+  "PROJECTS": {
+    "TITLE": "Projekte im Fokus",
+    "SUBTITLE": "Entdecken Sie hier einen Abschnitt meiner Arbeiten - interagieren Sie  \n mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "ITEMS": [
+      {
+        "ID": "01",
+        "NAME": "Join",
+        "DESCRIPTION": "Taskmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+        "TECH": [
+          {
+            "NAME": "HTML",
+            "IMG": "assets/images/tech_overlay/html_overlay.png"
+          },
+          {
+            "NAME": "CSS",
+            "IMG": "assets/images/tech_overlay/css_overlay.png"
+          },
+          {
+            "NAME": "JavaScript",
+            "IMG": "assets/images/tech_overlay/js_overlay.png"
+          },
+          {
+            "NAME": "Firebase",
+            "IMG": "assets/images/tech_overlay/firebase_overlay.png"
+          }
+        ],
+        "GITHUB": "https://github.com/Alakovic/join_v2",
+        "DEMO": "https://zeljko-alakovic.developerakademie.net/join_v2/",
+        "IMG": "img: 'assets/images/projects/join.png"
+      },
+      {
+        "ID": "02",
+        "NAME": "Sharky",
+        "DESCRIPTION": "Spiel basierend auf objektorientiertem Ansatz. Hilf Sharky, durch verschiedene Gegner zu kommen, alle Münzen und giftigen Trank zu finden, um gegen den großen verrückten Hai zu kämpfen.",
+        "TECH": [
+          {
+            "NAME": "HTML",
+            "IMG": "assets/images/tech_overlay/html_overlay.png"
+          },
+          {
+            "NAME": "CSS",
+            "IMG": "assets/images/tech_overlay/css_overlay.png"
+          },
+          {
+            "NAME": "JavaScript",
+            "IMG": "assets/images/tech_overlay/js_overlay.png"
+          }
+        ],
+        "GITHUB": "https://github.com/Alakovic/Sharky---THE-GAME",
+        "DEMO": "https://zeljko-alakovic.developerakademie.net/Sharky---THE-GAME/",
+        "IMG": "assets/images/projects/sharky.png"
+      }
     ]
   }
 }

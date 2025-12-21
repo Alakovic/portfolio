@@ -2,14 +2,16 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { Technology } from '../../interfaces/technology_interface/technology.interface';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-technologies',
   standalone: true,
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, MatCardModule,TranslateModule],
   templateUrl: './technologies.component.html',
   styleUrls: ['./technologies.component.scss'],
 })
+
 export class TechnologiesComponent {
   technologies: Technology[] = [
     { name: 'HTML', path: 'assets/images/technologies/html.png' },
