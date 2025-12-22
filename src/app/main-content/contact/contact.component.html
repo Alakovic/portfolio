@@ -1,17 +1,13 @@
 <section id="contact">
   <div class="contact">
-    <p>Contact me</p>
-    <h1>
-      Let's work <br />
-      together
-    </h1>
-    <h3>Got a problem to solve?</h3>
-    <p class="text">
-      I'm excited to help bring your ideas to life! Whether it's a project, a
-      challenge, or a role you have in mind, I'd love to hear from you. Let's
-      create something amazing together.
+    <p>{{ "CONTACT.HEAD" | translate }}</p>
+    <h1>{{ "CONTACT.TITLE" | translate }}</h1>
+    <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
+    <p class="text">{{ "CONTACT.CONTENT" | translate }}</p>
+    <p class="question">
+      {{ "CONTACT.QUESTION_WHITE" | translate
+      }}<span>{{ "CONTACT.QUESTION_GREEN" | translate }}</span>
     </p>
-    <p class="question">Need a Frontend developer?<span>Let's talk!</span></p>
   </div>
   <div class="contact-form">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -21,21 +17,21 @@
           !name.valid && (name.touched || contactForm.submitted)
         "
       >
-        <label for="name">What's your name? </label>
+        <label for="name">{{ "CONTACT_FORM.NAME" | translate }} </label>
         <input
           #name="ngModel"
           [(ngModel)]="contactData.name"
           type="text"
           id="name"
           name="name"
-          placeholder="Your name goes here"
+          [placeholder]="'CONTACT_FORM.NAME_PLACEHODER' | translate"
           required
         />
         <span
           class="error"
           *ngIf="!name.valid && (name.touched || contactForm.submitted)"
         >
-          Ooops! It seems your name is missing
+          {{ "CONTACT_FORM.NAME_ERROR" | translate }}
         </span>
       </div>
 
@@ -45,22 +41,26 @@
           !email.valid && (email.touched || contactForm.submitted)
         "
       >
-        <label for="email">What's your email?</label>
+        <label for="email">{{ "CONTACT_FORM.EMAIL" | translate }}</label>
         <input
           #email="ngModel"
           [(ngModel)]="contactData.email"
           type="email"
           id="email"
           name="email"
-          placeholder="youremail@email.com"
+          [placeholder]="'CONTACT_FORM.EMAIL' | translate"
           required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         />
         <span
           class="error"
-          *ngIf="!email.valid && (email.touched  || contactForm.submitted) && !email.dirty"
+          *ngIf="
+            !email.valid &&
+            (email.touched || contactForm.submitted) &&
+            !email.dirty
+          "
         >
-          Hoppla! Your email is required
+          {{ "CONTACT_FORM.EMAIL_ERROR" | translate }}
         </span>
       </div>
 
@@ -70,14 +70,14 @@
           !message.valid && (message.touched || contactForm.submitted)
         "
       >
-        <label for="message">How can I help you? </label>
+        <label for="message">{{ "CONTACT_FORM.TEXT" | translate }} </label>
         <textarea
           #message="ngModel"
           minlength="4"
           [(ngModel)]="contactData.message"
           id="message"
           name="message"
-          placeholder="Hello Zeljko, I am interested in..."
+          [placeholder]="'CONTACT_FORM.TEXT_PLACEHOLDER' | translate"
           style="height: 25px"
           required
         ></textarea>
@@ -85,7 +85,7 @@
           class="error"
           *ngIf="!message.valid && (message.touched || contactForm.submitted)"
         >
-          What do you need to develop?
+          {{ "CONTACT_FORM.TEXT_ERROR" | translate }}
         </span>
       </div>
       <div
@@ -99,14 +99,14 @@
           [(ngModel)]="contactData.agree"
         />
         <label for="agree"
-          >I've read the <a href="imprint">privacy policy</a> and agree to the
-          processing of my data as outlined.</label
+          >{{ "CONTACT_FORM.PRIVACY" | translate }}
+          <a href="imprint">{{ "CONTACT_FORM.PRIVACY_GREEN" | translate }}</a>
+          {{ "CONTACT_FORM.PRIVACY_WHITE" | translate }}</label
         >
-        <span class="error" *ngIf="!contactData.agree && contactForm.submitted">
-          Please accpet the privacy policy.
+        <span class="error" *ngIf="!contactData.agree && contactForm.submitted">  {{ "CONTACT_FORM.ACCEPT" | translate }}
         </span>
       </div>
-      <button type="submit"><span>Say Hello ;)</span></button>
+      <button type="submit"><span>{{ "CONTACT_FORM.BUTTON" | translate }}</span></button>
     </form>
   </div>
 </section>
