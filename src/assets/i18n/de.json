@@ -41,6 +41,7 @@
       {
         "ID": "01",
         "NAME": "Join",
+        "ABOUT": "Worum geht es bei diesem Projekt?",
         "DESCRIPTION": "Taskmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
         "TECH": [
           {
@@ -62,11 +63,13 @@
         ],
         "GITHUB": "https://github.com/Alakovic/join_v2",
         "DEMO": "https://zeljko-alakovic.developerakademie.net/join_v2/",
-        "IMG": "img: 'assets/images/projects/join.png"
+        "IMG": "assets/images/projects/join.png",
+        "NEXT": "Nächstes Projekt"
       },
       {
         "ID": "02",
         "NAME": "Sharky",
+        "ABOUT": "Worum geht es bei diesem Projekt?",
         "DESCRIPTION": "Spiel basierend auf objektorientiertem Ansatz. Hilf Sharky, durch verschiedene Gegner zu kommen, alle Münzen und giftigen Trank zu finden, um gegen den großen verrückten Hai zu kämpfen.",
         "TECH": [
           {
@@ -84,7 +87,8 @@
         ],
         "GITHUB": "https://github.com/Alakovic/Sharky---THE-GAME",
         "DEMO": "https://zeljko-alakovic.developerakademie.net/Sharky---THE-GAME/",
-        "IMG": "assets/images/projects/sharky.png"
+        "IMG": "assets/images/projects/sharky.png",
+        "NEXT": "Nächstes Projekt"
       }
     ]
   }

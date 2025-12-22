@@ -16,25 +16,25 @@
     </svg>
 
     <div class="project-info">
-      <h1>{{ project.id }}</h1>
-      <h2>{{ project.name }}</h2>
-      <p>What is this project about?</p>
-      <span>{{ project.description }}</span>
+      <h1>{{ project.ID }}</h1>
+      <h2>{{ project.NAME }}</h2>
+      <p>{{project.ABOUT}}</p>
+      <span>{{ project.DESCRIPTION }}</span>
       <div class="tech-list">
-        <div class="tech-item" *ngFor="let t of project.tech">
-          <img [src]="t.image" alt="{{ t.name }}" />
-          <span>{{ t.name }}</span>
+        <div class="tech-item" *ngFor="let t of project.TECH">
+          <img [src]="t.IMG" alt="{{ t.NAME }}" />
+          <span>{{ t.NAME }}</span>
         </div>
       </div>
       <div class="links">
         <button>
-          <a [href]="project.github" target="_blank"
+          <a [href]="project.GITHUB" target="_blank"
             ><span>GitHub</span
             ><img src="assets/images/arrow_forward.png" alt="arrow" />
           </a>
         </button>
         <button>
-          <a [href]="project.demo" target="_blank"
+          <a [href]="project.DEMO" target="_blank"
             ><span>Live Test</span
             ><img src="assets/images/arrow_forward.png" alt="arrow" />
           </a>
@@ -42,10 +42,10 @@
       </div>
     </div>
     <div class="project-img">
-      <img [src]="project.img" alt="{{ project.name }}" />
+      <img [src]="project.IMG" alt="{{ project.NAME }}" />
     </div>
     <button class="next-project" (click)="onNext()">
-      <span>Next project</span
+      <span>{{project.NEXT}}</span
       ><img src="assets/images/arrow_forward.png" alt="arrow" />
     </button>
   </div>

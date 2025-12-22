@@ -35,13 +35,14 @@
     "CONTACT": "Let's Talk"
   },
   "PROJECTS": {
-    "TITLE": "Projekte im Fokus",
-    "SUBTITLE": "Entdecken Sie hier einen Abschnitt meiner Arbeiten - interagieren Sie  \n mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "TITLE": "Featured Projects",
+    "SUBTITLE": "Explore a section of my work here - Interact with \n projects to see my skills in action.",
     "ITEMS": [
       {
         "ID": "01",
         "NAME": "Join",
-        "DESCRIPTION": "Taskmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+        "ABOUT": "What is this project about?",
+        "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories",
         "TECH": [
           {
             "NAME": "HTML",
@@ -62,12 +63,14 @@
         ],
         "GITHUB": "https://github.com/Alakovic/join_v2",
         "DEMO": "https://zeljko-alakovic.developerakademie.net/join_v2/",
-        "IMG": "assets/images/projects/join.png"
+        "IMG": "assets/images/projects/join.png",
+        "NEXT": "Next project"
       },
       {
         "ID": "02",
         "NAME": "Sharky",
-        "DESCRIPTION": "Spiel basierend auf objektorientiertem Ansatz. Hilf Sharky, durch verschiedene Gegner zu kommen, alle Münzen und giftigen Trank zu finden, um gegen den großen verrückten Hai zu kämpfen.",
+        "ABOUT": "What is this project about?",
+        "DESCRIPTION": "Game based on object-oriented approach.Help Sharky to get trough various enemies , find all coins and poisoned elixir to fight against the big crazy shark",
         "TECH": [
           {
             "NAME": "HTML",
@@ -84,7 +87,8 @@
         ],
         "GITHUB": "https://github.com/Alakovic/Sharky---THE-GAME",
         "DEMO": "https://zeljko-alakovic.developerakademie.net/Sharky---THE-GAME/",
-        "IMG": "assets/images/projects/sharky.png"
+        "IMG": "assets/images/projects/sharky.png",
+        "NEXT": "Next project"
       }
     ]
   }

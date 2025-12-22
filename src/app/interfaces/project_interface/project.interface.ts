@@ -1,9 +1,11 @@
 export interface Project {
-    id:string;
-    name:string;
-    tech:{ name: string; image: string }[];
-    img:string;
-    description:string;
-    github:string;
-    demo:string;
+    ID:string;
+    NAME:string;
+    ABOUT:string;
+    TECH:{ NAME: string; IMG: string }[];
+    IMG:string;
+    DESCRIPTION:string;
+    GITHUB:string;
+    DEMO:string;
+    NEXT:string;
 }

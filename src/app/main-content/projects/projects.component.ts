@@ -2,59 +2,28 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Project } from '../../interfaces/project_interface/project.interface';
 import { SingleProjectComponent } from './single-project/single-project.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, SingleProjectComponent],
+  imports: [CommonModule, SingleProjectComponent,TranslateModule],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
-  projects: Project[] = [
-    {
-      id: '01',
-      name: 'Join',
-      tech: [
-        { name: 'HTML', image: 'assets/images/tech_overlay/html_overlay.png' },
-        { name: 'CSS', image: 'assets/images/tech_overlay/css_overlay.png' },
-        {
-          name: 'JavScript',
-          image: 'assets/images/tech_overlay/js_overlay.png',
-        },
-        {
-          name: 'Firebase',
-          image: 'assets/images/tech_overlay/firebase_overlay.png',
-        },
-      ],
-      img: 'assets/images/projects/join.png',
-      description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions,assign users and categories.',
-      github: 'https://github.com/Alakovic/join_v2',
-      demo: 'https://zeljko-alakovic.developerakademie.net/join_v2/',
-    },
-    {
-      id: '02',
-      name: 'Sharky',
-      tech: [
-        { name: 'HTML', image: 'assets/images/tech_overlay/html_overlay.png' },
-        { name: 'CSS', image: 'assets/images/tech_overlay/css_overlay.png' },
-        {
-          name: 'JavaScript',
-          image: 'assets/images/tech_overlay/js_overlay.png',
-        },
-      ],
-      img: 'assets/images/projects/sharky.png',
-      description:
-        'Game based on object-oriented approach.Help Sharky to get trough various enemies , find all coins and poisoned elixir to fight against the big crazy shark',
-      github: 'https://github.com/Alakovic/Sharky---THE-GAME',
-      demo: 'https://zeljko-alakovic.developerakademie.net/Sharky---THE-GAME/',
-    },
-  ];
+  projects$ = this.translate.stream('PROJECTS.ITEMS');
+  projects: Project[] = [];
 
   currentImg: string = '';
   imgIndex: number = 0;
   selectedProject: Project | null = null;
+
+  constructor(private translate: TranslateService) {
+    this.projects$.subscribe((projects: Project[]) => {
+      this.projects = projects;
+    });
+  }
 
   showImg(path: string, index: number) {
     this.currentImg = path;
@@ -70,13 +39,13 @@ export class ProjectsComponent {
   }
 
   closeOverlay() {
-    this.selectedProject = null; 
+    this.selectedProject = null;
   }
 
-  nextProject(){
-    if(!this.selectedProject) return;
+  nextProject() {
+    if (!this.selectedProject) return;
     const currentIndex = this.projects.indexOf(this.selectedProject);
-    const nextIndex =(currentIndex + 1) % this.projects.length;
+    const nextIndex = (currentIndex + 1) % this.projects.length;
     this.selectedProject = this.projects[nextIndex];
   }
 }
