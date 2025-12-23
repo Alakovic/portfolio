@@ -1,5 +1,5 @@
 export interface Reference{
-    name:string;
-    role:string;
-    text:string;
+    NAME:string;
+    ROLE:string;
+    TEXT:string;
 }

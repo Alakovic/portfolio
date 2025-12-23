@@ -120,5 +120,57 @@
     "DEVELOPER" : "Web Entwickler",
     "CITY" : "Köln Deutschland",
     "IMPRESSUM" : "Impressum"
+  },
+  "REFERENCES" : {
+    "HEADLINE" : "Das sagen meine Kollegen über mich",
+    "REFERENCE" : [
+      {
+        "NAME" : "Kyrylo Novikov",
+        "TEXT" : "Ich hatte das Vergnügen, mit Željko am Projekt „Join“ zu arbeiten, und die Zusammenarbeit war durchweg reibungslos und professionell. Sein Engagement, seine Präzision und seine Teamfähigkeit haben maßgeblich zur Qualität des Endprodukts beigetragen.",
+        "ROLE" : "Join Team Member"
+      },
+      {
+        "NAME": "André Zelmer",
+        "TEXT": "Ich habe mit Željko an mehreren Projekten gearbeitet. Im Projekt „Join“ übernahm er den Bereich der Aufgabenverwaltung und lieferte zuverlässig ab. Technisch sehr kompetent und menschlich absolut unkompliziert – genau das, was man sich in einem Team wünscht.",
+        "ROLE": "Join Team Member"
+      },
+      {
+        "NAME": "Stefan Krischan",
+        "TEXT":"Ich habe mit Željko am Projekt „Join“ zusammengearbeitet. Seine technische Kompetenz und seine ausgeprägte Teamorientierung haben kontinuierlich zum Erfolg unserer Arbeit beigetragen.",
+        "ROLE": "Join Team Member"
+      }
+    ]
+  },
+  "IMPRINT" : {
+    "HEADLINE" : "Impressum",
+    "PORTFOLIO" : "Portfolio(Produkt)",
+    "IMPRINT" : "Impressum ",
+    "BOARD" : "Erkundung des Boards",
+    "TERMS_HEAD" : "Einwilligung in die Bedingungen",
+    "TERMS_CONTENT1": "Durch den Zugriff auf und die Nutzung von",
+    "TERMS_CONTENT2": "erkennen Sie die folgenden Geschäftsbedingungen sowie alle dazugehörigen Richtlinien, Leitlinien oder Änderungen an, die Ihnen von Zeit zu Zeit vorgelegt werden können. Ich, Željko Alakovic, behalte mir das Recht vor, diese Geschäftsbedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern.",
+    "SCOPE_HEAD" : "Umfang und Eigentumsrechte am Produkt",
+    "SCOPE_CONTENT1" : "wurde im Rahmen eines Projekts in einem Webentwicklungs-Bootcamp bei der",
+    "SCOPE_CONTENT2" : "entwickelt. Es dient ausschließlich zu Bildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher können wir keine Garantie für eine dauerhafte Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsmerkmale dieses Produkts übernehmen.",
+    "SCOPE_CONTENT3" : "Das Design von",
+    "SCOPE_CONTENT4" : "ist Eigentum der",
+    "SCOPE_CONTENT5" : "Die unbefugte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachahmung des Designs ist strengstens untersagt." ,
+    "RIGHTS_HEAD" : "Eigentumsrechte",
+    "RIGHTS_CONTENT1" : "Abgesehen vom Design, das Eigentum der",
+    "RIGHTS_CONTENT2" : "ist, behalte ich, Željko Alakovic, sämtliche Eigentumsrechte an" ,
+    "RIGHTS_CONTENT3" : ", einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken sowie sonstiger geschützter Informationen." ,
+    "PRODUCT_HEAD" : "Nutzung des Produkts",
+    "PRODUCT_CONTENT1" : "darf ausschließlich zu rechtmäßigen Zwecken und in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften genutzt werden. Jegliche Nutzung von",
+    "PRODUCT_CONTENT2" : " für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist strengstens untersagt. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern von",
+    "DISCLAIMER_HEAD" : "Haftungsausschluss und Haftungsbeschränkung",
+    "DISCLAIMER_CONTENT1" : "wird im vorliegenden Zustand 'as is' und ohne jegliche Gewährleistung bereitgestellt, weder ausdrücklich noch stillschweigend, einschließlich, aber nicht beschränkt auf stillschweigende Gewährleistungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck sowie der Nichtverletzung von Rechten Dritter. In keinem Fall haften ich, Željko Alakovic, oder die",
+    "DISCLAIMER_CONTENT2" : "für direkte, indirekte, zufällige, besondere, Folge- oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden durch entgangenen Gewinn, Verlust von Goodwill, Nutzungsausfall, Datenverlust oder sonstige immaterielle Verluste, selbst wenn wir auf die Möglichkeit solcher Schäden hingewiesen wurden, die aus der Nutzung oder der Leistungsfähigkeit von" ,
+    "DISCLAIMER_CONTENT3" : "entstehen oder damit in Zusammenhang stehen.",
+    "INDEMNITY_HEAD" : "Freistellung" ,
+    "INDEMNITY_CONTENT1" : "Sie erklären sich damit einverstanden, mich, Željko Alakovic, die",
+    "INDEMNITY_CONTENT2" : "sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von sämtlichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Rechtsanwaltskosten) freizustellen, zu verteidigen und schadlos zu halten, die aus oder im Zusammenhang mit Ihrer Nutzung von" ,
+    "INDEMNITY_CONTENT3" : " und/oder Ihrem Verstoß gegen diesen rechtlichen Hinweis entstehen.",
+    "CONTACT" : "Bei Fragen oder Mitteilungen kontaktieren Sie mich bitte unter",
+    "DATE" :  "Datum:  Dezember 15, 2025"
   }
 }

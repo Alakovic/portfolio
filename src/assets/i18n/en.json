@@ -120,5 +120,57 @@
     "DEVELOPER" : "Web Developer",
     "CITY" : "Cologne Germany ",
     "IMPRESSUM" : "Legal Notice"
+  },
+  "REFERENCES" : {
+    "HEADLINE" : "What my colleagues say about me  ",
+    "REFERENCE" : [
+      {
+        "NAME" : "Kyrylo Novikov",
+        "TEXT" : "I had the pleasure of working with Zeljko on the “Join” Project  , and the collaboration was truly smooth and professional.His dedication, precision, and teamwork greatly contributed to the quality of the final product.",
+        "ROLE" : "Join Team Member"
+      },
+      {
+        "NAME": "André Zelmer",
+        "TEXT": "I worked with Zeljko on several projects. In the „Join“ project, he took over the area for managing tasks and delivered reliably. Technically very competent and absolutely uncomplicated as a person – that's exactly what you want in a team.",
+        "ROLE": "Join Team Member"
+      },
+      {
+        "NAME": "Stefan Krischan",
+        "TEXT":"I collaborated with Zeljko on the  „Join“ project. His technical competence and strong team-oriented mindset consistently contributed to the success of our work.",
+        "ROLE": "Join Team Member"
+      }
+    ]
+  },
+  "IMPRINT" : {
+    "HEADLINE" : "Legal Notice",
+    "PORTFOLIO" : "Portfolio(Product)",
+    "IMPRINT" : "Imprint ",
+    "BOARD" : "Exploring the Board",
+    "TERMS_HEAD" : "Acceptance of terms",
+    "TERMS_CONTENT1": "By accessing and using",
+    "TERMS_CONTENT2": "you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that my be presented to you from time to time. I, Zeljko Alakovic, may update or change the terms and conditions from time to time without notice",
+    "SCOPE_HEAD" : "Scope and ownership of the product",
+    "SCOPE_CONTENT1" : "has been developed as part of a project in a web development bootcamp at the ",
+    "SCOPE_CONTENT2" : "It has an education purpose and is not intended for extensive personal & business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+    "SCOPE_CONTENT3" : "The design of",
+    "SCOPE_CONTENT4" : "is owned by the",
+    "SCOPE_CONTENT5" : "Unauthorized use, reproduction, modification, distribution, or replication of design is strictly prohibited" ,
+    "RIGHTS_HEAD" : "Proprietary rights",
+    "RIGHTS_CONTENT1" : "Aside from the design owned by",
+    "RIGHTS_CONTENT2" : "I , Zeljko Alakovic, retain all proprietary rights in" ,
+    "RIGHTS_CONTENT3" : ",including any associated copyrighted material,trademarks, and other proprietary information" ,
+    "PRODUCT_HEAD" : "Use of the product",
+    "PRODUCT_CONTENT1" : "is intended to be used for lawful purpose only,accordance with all applicable laws and regulations. Any use of",
+    "PRODUCT_CONTENT2" : " for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interaction with other users of",
+    "DISCLAIMER_HEAD" : "Disclaimer of warranties and limitation of liability",
+    "DISCLAIMER_CONTENT1" : "is provided 'as is' without warranty of any kind, whether express or implied, including but not limited to the implied warranties  of merchantability, fitness for a particular purpose, and  non-infringement. In no event will I, Zeljko Alakovic or the",
+    "DISCLAIMER_CONTENT2" : "be liable for and direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with use of performance of" ,
+    "DISCLAIMER_CONTENT3" : "",
+    "INDEMNITY_HEAD" : "Indemnity" ,
+    "INDEMNITY_CONTENT1" : "You agree to indemnify,defend and hold harmless me, Zeljko Alakovic,the",
+    "INDEMNITY_CONTENT2" : "and our affiliates,partners,officers,directors,agents, and employees,from and against any claim ,demand, loss,damage, cost, or liability(including reasonable legal fees) arising out of or relating to your use of" ,
+    "INDEMNITY_CONTENT3" : " and/or your breach of this Legal Notice.",
+    "CONTACT" : "For any questions or notices, please contact me at ",
+    "DATE" :  "Date: December 15,2025"
   }
 }
