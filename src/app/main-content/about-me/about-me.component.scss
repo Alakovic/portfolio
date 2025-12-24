@@ -11,12 +11,14 @@ section {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 50px;
+    gap: 60px;
   }
 
   .image-box {
-    flex: 1 1 550px;
+    flex: 0 1 550px;
     max-width: 550px;
+    min-width: 280px;
     position: relative;
     display: flex;
     align-items: center;
@@ -45,8 +47,8 @@ section {
     }
 
     img {
-      width: 550px;
-      height: 550px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       display: block;
       z-index: 1;
@@ -55,8 +57,9 @@ section {
   }
 
   .info {
-    flex: 1 1 600px;
-    max-width: 600px;
+    flex: 0 1 auto;
+    width: clamp(320px, 45vw, 500px);
+    max-width: 500px;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -74,16 +77,17 @@ section {
   }
 
   mat-card {
-    width: 600px;
+    width: 100%;
     border: 1px solid #3dcfb6;
     border-radius: 30px;
-    background-color: #36514c;
+    background-color: #1f2e2b;
     padding: 15px;
+    box-sizing: border-box;
   }
 
   mat-card-title {
     color: #3dcfb6;
-    font-size: 40px;
+    font-size: clamp(28px, 3vw, 40px);
     font-weight: bold;
     padding-bottom: 15px;
   }
@@ -91,7 +95,7 @@ section {
   mat-card-subtitle {
     color: #fff;
     padding-bottom: 25px;
-    font-size: 18px;
+    font-size: clamp(16px, 1.6vw, 18px);
     font-weight: 400;
   }
 
@@ -108,12 +112,38 @@ section {
 
     span {
       display: inline-block;
-      color: #969f9d;
+      color: #b5bab9;
 
       &:hover {
         color: #fff;
         cursor: default;
       }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  section {
+    .section-wrapper {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-box {
+      flex: none;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .info {
+      flex: none;
+      padding-top: 0px;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      max-width: 500px;
     }
   }
 }

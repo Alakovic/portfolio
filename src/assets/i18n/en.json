@@ -13,7 +13,7 @@
     "ITEMS": [
       "Available for remote work",
       "Frontend Developer",
-      "Based in Köln",
+      "Based in Cologne",
       "Open to work"
     ]
   },
@@ -21,7 +21,7 @@
     "WHO": "Who I am",
     "TITLE": "About me",
     "SUBTITLE": "Hy there, I'm Zeljko! I'm passionate about coding, eager to learn new technologies, and constantly improving my skills",
-    "LOCATION": "Live in Köln. Open to remote,hybrid and in-office work, and I'm flexible to adapt to different working environments.",
+    "LOCATION": "Live in Cologne. Open to remote,hybrid and in-office work, and I'm flexible to adapt to different working environments.",
     "HEAD": "I am open-minded and always enthusiastic about learning new technologies and continually improving my skills",
     "CHECK": "My problem-solving approach is based on analytical thinking,creativity and persistence.I learn from every challenge and constantly aim to find solutions that are both efficient and elegant.I believe in collaboration and see each obstacle as an opportunity to improve and expand my skills"
   },
@@ -112,7 +112,7 @@
     "TEXT_ERROR" : "What do you need to develop?",
     "PRIVACY" : "I've read the ",
     "PRIVACY_GREEN" : "privacy policy",
-    "PRIVACY_WHITE" : "and agree to hte proessing of my data as outlined.",
+    "PRIVACY_WHITE" : "and agree to the proessing of my data as outlined.",
     "ACCEPT" : "Please accpet the privacy policy",
     "BUTTON" : "Say Hello ;)"
   },
