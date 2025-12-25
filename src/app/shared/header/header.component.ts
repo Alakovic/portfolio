@@ -14,10 +14,20 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  mobileMenuOpen:boolean = false;
+  
   constructor(public languageService:LanguageService) {}
 
   changeLanguage(lang:string){
     this.languageService.switchLanguage(lang)
+  }
+
+  toggleMobileMenu(){
+    this.mobileMenuOpen=!this.mobileMenuOpen;
+  }
+
+  closeMobileMenu(){
+    this.mobileMenuOpen = false;
   }
 
 }

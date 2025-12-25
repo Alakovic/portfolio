@@ -150,6 +150,9 @@ h2 {
       fill: #fff;
     }
 
+    .email_icon {
+      display: none;
+    }
     .email {
       writing-mode: vertical-rl;
       transform: rotate(180deg);
@@ -202,4 +205,112 @@ h2 {
   60% {
     transform: translateY(20px);
   }
+}
+
+@media (max-width: 890px) {
+  section {
+    h1 {
+      font-size: 70px;
+    }
+  }
+}
+
+@media (max-width: 795px) {
+  section {
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    h2 {
+      font-size: 30px;
+    }
+    .side-right {
+      gap: 5px;
+      .contact {
+        gap: 5px;
+        .email_icon {
+          display: block;
+        }
+        .email {
+          display: none;
+        }
+      }
+
+      .line {
+        height: 50px;
+      }
+    }
+
+    .side-left {
+      .line {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  section {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .buttons{
+    button{
+      a{
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  section {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+  }
+
+  .buttons{
+    button{
+      a{
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  section {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+  }
+
+  
 }
