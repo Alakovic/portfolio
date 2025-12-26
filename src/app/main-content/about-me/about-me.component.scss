@@ -202,10 +202,10 @@ section {
 
     mat-card-subtitle {
       font-size: 13px;
+      line-height: 15px;
     }
   }
 }
-
 
 @media (max-width: 370px) {
   section {
@@ -221,6 +221,7 @@ section {
 
     mat-card-subtitle {
       font-size: 11px;
+      line-height: 11px;
     }
   }
 }
@@ -239,6 +240,7 @@ section {
 
     mat-card-subtitle {
       font-size: 10px;
+      line-height: 11px;
     }
   }
 }
