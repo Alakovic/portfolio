@@ -18,7 +18,9 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  width: 85%;
+  width: 95%;
+  max-width: 1440px;
+  padding: 0 30px;
   gap: 80px;
   border: #3dcfb6 solid 1px;
 
@@ -71,7 +73,6 @@
       display: flex;
       flex-direction: row;
       padding-top: 30px;
-      padding-bottom: 30px;
       gap: 30px;
 
       .tech-item {
@@ -84,10 +85,15 @@
 
   .project-img {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
     img {
-      width: 550px;
-      height: 350px;
+      width: 100%;
+      height: auto;
       border-radius: 25px;
+      object-fit: cover;
+      display: block;
     }
   }
 
@@ -102,6 +108,7 @@
       background: transparent;
       border-radius: 100px;
       height: 40px;
+      margin: 40px 0;
 
       a {
         color: #fff;
@@ -149,7 +156,7 @@
     background: transparent;
     outline: none;
     cursor: pointer;
-    gap:8px;
+    gap: 8px;
 
     span {
       color: #3dcfb6;
@@ -157,17 +164,87 @@
       font-family: "Karla Regular" !important;
     }
 
-    img{
+    img {
       transition: transform 0.3s ease;
     }
 
-    &:hover span{
+    &:hover span {
       color: #fff;
     }
 
     &:hover img {
-      transform: translate(5px,0);
+      transform: translate(5px, 0);
       filter: brightness(1.5);
     }
   }
+}
+
+@media (max-width: 1000px) {
+  .overlay {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 30px 0;
+  }
+  .content {
+    flex-direction: column-reverse;
+    padding: 40px 30px;
+    gap: 40px;
+    .project-img {
+      margin-top: 80px;
+      max-width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .project-info {
+      width: 100%;
+    }
+
+    .links {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+
+  .next-project {
+    position: static;
+    margin-top: 40px;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 570px) {
+  .content {
+    .project-info {
+      .tech-list {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+ .content{
+  .links{
+     gap: 8px;
+    button{
+      a{
+         font-size: 12px;
+      }
+    }
+  }
+ }
+}
+
+@media (max-width: 347px) {
+ .content{
+  .links{
+    button{
+      a{
+         font-size:9px;
+      }
+    }
+  }
+ }
 }
