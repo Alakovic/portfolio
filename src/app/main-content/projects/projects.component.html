@@ -1,4 +1,5 @@
 <section id="project">
+  <div class="section-wrapper">
   <div class="project-wrapp">
     <div class="project-head">
       <span>Portfolio</span>
@@ -30,9 +31,10 @@
   <div
     class="project-img"
     [ngClass]="{ active: currentImg }"
-    [ngStyle]="{ 'top.px': 280 + imgIndex * 70 }"
+    [ngStyle]="{ 'top.px': 170 + imgIndex * 90}"
   >
     <img *ngIf="currentImg" [src]="currentImg" alt="project image" />
+  </div>
   </div>
 </section>
 
