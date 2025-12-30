@@ -1,112 +1,120 @@
 <section id="contact">
-  <div class="contact">
-    <p>{{ "CONTACT.HEAD" | translate }}</p>
-    <h1>{{ "CONTACT.TITLE" | translate }}</h1>
-    <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
-    <p class="text">{{ "CONTACT.CONTENT" | translate }}</p>
-    <p class="question">
-      {{ "CONTACT.QUESTION_WHITE" | translate
-      }}<span>{{ "CONTACT.QUESTION_GREEN" | translate }}</span>
-    </p>
-  </div>
-  <div class="contact-form">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <div
-        class="name"
-        [class.has-error]="
-          !name.valid && (name.touched || contactForm.submitted)
-        "
-      >
-        <label for="name">{{ "CONTACT_FORM.NAME" | translate }} </label>
-        <input
-          #name="ngModel"
-          [(ngModel)]="contactData.name"
-          type="text"
-          id="name"
-          name="name"
-          [placeholder]="'CONTACT_FORM.NAME_PLACEHODER' | translate"
-          required
-        />
-        <span
-          class="error"
-          *ngIf="!name.valid && (name.touched || contactForm.submitted)"
-        >
-          {{ "CONTACT_FORM.NAME_ERROR" | translate }}
-        </span>
-      </div>
-
-      <div
-        class="email"
-        [class.has-error]="
-          !email.valid && (email.touched || contactForm.submitted)
-        "
-      >
-        <label for="email">{{ "CONTACT_FORM.EMAIL" | translate }}</label>
-        <input
-          #email="ngModel"
-          [(ngModel)]="contactData.email"
-          type="email"
-          id="email"
-          name="email"
-          [placeholder]="'CONTACT_FORM.EMAIL' | translate"
-          required
-          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-        />
-        <span
-          class="error"
-          *ngIf="
-            !email.valid &&
-            (email.touched || contactForm.submitted) &&
-            !email.dirty
+  <div class="section-wrapper">
+    <div class="contact">
+      <p>{{ "CONTACT.HEAD" | translate }}</p>
+      <h1>{{ "CONTACT.TITLE" | translate }}</h1>
+      <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
+      <p class="text">{{ "CONTACT.CONTENT" | translate }}</p>
+      <p class="question">
+        {{ "CONTACT.QUESTION_WHITE" | translate
+        }}<span>{{ "CONTACT.QUESTION_GREEN" | translate }}</span>
+      </p>
+    </div>
+    <div class="contact-form">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <div
+          class="name"
+          [class.has-error]="
+            !name.valid && (name.touched || contactForm.submitted)
           "
         >
-          {{ "CONTACT_FORM.EMAIL_ERROR" | translate }}
-        </span>
-      </div>
+          <label for="name">{{ "CONTACT_FORM.NAME" | translate }} </label>
+          <input
+            #name="ngModel"
+            [(ngModel)]="contactData.name"
+            type="text"
+            id="name"
+            name="name"
+            [placeholder]="'CONTACT_FORM.NAME_PLACEHODER' | translate"
+            required
+          />
+          <span
+            class="error"
+            *ngIf="!name.valid && (name.touched || contactForm.submitted)"
+          >
+            {{ "CONTACT_FORM.NAME_ERROR" | translate }}
+          </span>
+        </div>
 
-      <div
-        class="text"
-        [class.has-error]="
-          !message.valid && (message.touched || contactForm.submitted)
-        "
-      >
-        <label for="message">{{ "CONTACT_FORM.TEXT" | translate }} </label>
-        <textarea
-          #message="ngModel"
-          minlength="4"
-          [(ngModel)]="contactData.message"
-          id="message"
-          name="message"
-          [placeholder]="'CONTACT_FORM.TEXT_PLACEHOLDER' | translate"
-          style="height: 25px"
-          required
-        ></textarea>
-        <span
-          class="error"
-          *ngIf="!message.valid && (message.touched || contactForm.submitted)"
+        <div
+          class="email"
+          [class.has-error]="
+            !email.valid && (email.touched || contactForm.submitted)
+          "
         >
-          {{ "CONTACT_FORM.TEXT_ERROR" | translate }}
-        </span>
-      </div>
-      <div
-        class="check"
-        [class.has-error]="!contactData.agree && contactForm.submitted"
-      >
-        <input
-          type="checkbox"
-          name="agree"
-          id="agree"
-          [(ngModel)]="contactData.agree"
-        />
-        <label for="agree"
-          >{{ "CONTACT_FORM.PRIVACY" | translate }}
-          <a href="imprint">{{ "CONTACT_FORM.PRIVACY_GREEN" | translate }}</a>
-          {{ "CONTACT_FORM.PRIVACY_WHITE" | translate }}</label
+          <label for="email">{{ "CONTACT_FORM.EMAIL" | translate }}</label>
+          <input
+            #email="ngModel"
+            [(ngModel)]="contactData.email"
+            type="email"
+            id="email"
+            name="email"
+            [placeholder]="'CONTACT_FORM.EMAIL' | translate"
+            required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+          />
+          <span
+            class="error"
+            *ngIf="
+              !email.valid &&
+              (email.touched || contactForm.submitted) &&
+              !email.dirty
+            "
+          >
+            {{ "CONTACT_FORM.EMAIL_ERROR" | translate }}
+          </span>
+        </div>
+
+        <div
+          class="text"
+          [class.has-error]="
+            !message.valid && (message.touched || contactForm.submitted)
+          "
         >
-        <span class="error" *ngIf="!contactData.agree && contactForm.submitted">  {{ "CONTACT_FORM.ACCEPT" | translate }}
-        </span>
-      </div>
-      <button type="submit"><span>{{ "CONTACT_FORM.BUTTON" | translate }}</span></button>
-    </form>
+          <label for="message">{{ "CONTACT_FORM.TEXT" | translate }} </label>
+          <textarea
+            #message="ngModel"
+            minlength="4"
+            [(ngModel)]="contactData.message"
+            id="message"
+            name="message"
+            [placeholder]="'CONTACT_FORM.TEXT_PLACEHOLDER' | translate"
+            style="height: 25px"
+            required
+          ></textarea>
+          <span
+            class="error"
+            *ngIf="!message.valid && (message.touched || contactForm.submitted)"
+          >
+            {{ "CONTACT_FORM.TEXT_ERROR" | translate }}
+          </span>
+        </div>
+        <div
+          class="check"
+          [class.has-error]="!contactData.agree && contactForm.submitted"
+        >
+          <input
+            type="checkbox"
+            name="agree"
+            id="agree"
+            [(ngModel)]="contactData.agree"
+          />
+          <label for="agree"
+            >{{ "CONTACT_FORM.PRIVACY" | translate }}
+            <a href="imprint">{{ "CONTACT_FORM.PRIVACY_GREEN" | translate }}</a>
+            {{ "CONTACT_FORM.PRIVACY_WHITE" | translate }}</label
+          >
+          <span
+            class="error"
+            *ngIf="!contactData.agree && contactForm.submitted"
+          >
+            {{ "CONTACT_FORM.ACCEPT" | translate }}
+          </span>
+        </div>
+        <button type="submit">
+          <span>{{ "CONTACT_FORM.BUTTON" | translate }}</span>
+        </button>
+      </form>
+    </div>
   </div>
 </section>

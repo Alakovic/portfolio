@@ -94,7 +94,7 @@
   },
   "CONTACT": {
     "HEAD": "Kontaktieren Sie mich ",
-    "TITLE": "Lassen Sie uns\n zusammenarbeiten",
+    "TITLE": "Lassen Sie uns  zusammenarbeiten",
     "QUESTION": "Haben Sie ein Problem zu lösen?",
     "CONTENT": "Ich freue mich darauf, Ihre Ideen zum Leben zu erwecken! Ob es sich um ein Projekt, eine Herausforderung oder eine Position handelt, die Sie im Sinn haben – ich freue mich, von Ihnen zu hören. Lassen Sie uns gemeinsam etwas Großartiges schaffen.",
     "QUESTION_WHITE": "Brauchen Sie einen Frontend-Entwickler?",
@@ -104,7 +104,7 @@
     "NAME": "Wie ist dein Name?",
     "NAME_PLACEHODER": "Hier kommt dein Name hin",
     "NAME_ERROR": "Hoppla! Dein Name fehlt noch",
-    "EMAIL": "Wie lautet deine E-Mail-Adresse?",
+    "EMAIL": "Wie lautet deine E-Mail Adresse?",
     "EMAIL_PLACEHOLDER": "deineemail@email.com",
     "EMAIL_ERROR": "Hoppla! Deine E-Mail-Adresse ist erforderlich",
     "TEXT": "Wie kann ich dir helfen?",
