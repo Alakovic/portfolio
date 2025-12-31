@@ -1,6 +1,7 @@
 section {
   position: relative;
   height: calc(100vh - 101px);
+  overflow: hidden;
 
   .section-wrapper {
     max-width: 1440px;
@@ -241,13 +242,13 @@ h2 {
       }
 
       .line {
-        height: 50px;
+        height: 100px;
       }
     }
 
     .side-left {
       .line {
-        height: 120px;
+        height: 160px;
       }
     }
   }
@@ -274,9 +275,9 @@ h2 {
     }
   }
 
-  .buttons{
-    button{
-      a{
+  .buttons {
+    button {
+      a {
         font-size: 15px;
       }
     }
@@ -293,9 +294,9 @@ h2 {
     }
   }
 
-  .buttons{
-    button{
-      a{
+  .buttons {
+    button {
+      a {
         font-size: 10px;
       }
     }
@@ -311,6 +312,4 @@ h2 {
       font-size: 15px;
     }
   }
-
-  
 }
