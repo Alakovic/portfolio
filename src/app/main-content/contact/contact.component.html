@@ -115,6 +115,9 @@
           <span>{{ "CONTACT_FORM.BUTTON" | translate }}</span>
         </button>
       </form>
+      <p class="success-message" *ngIf="successMessage">
+        {{ "CONTACT_FORM.SUCCESS" | translate }}
+      </p>
     </div>
   </div>
 </section>

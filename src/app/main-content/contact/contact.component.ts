@@ -11,9 +11,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
+
 export class ContactComponent {
 
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   contactData = {
     name: '',
@@ -22,34 +23,27 @@ export class ContactComponent {
     agree: false,
   };
 
-  mailTest = true;
-
-  post = {
-    endPoint: 'https://zeljko-alakovic.de/sendMail.php',
-    body: (payload: any) => JSON.stringify(payload),
-    options: {
-      headers: {
-        'Content-Type': 'text/plain',
-        responseType: 'text',
-      },
-    },
-  };
-
+  successMessage = false;
+  
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
+    if (ngForm.valid) {
+      this.http.post(
+        'https://zeljko-alakovic.de/api/sendMail.php',
+        this.contactData
+      ).subscribe({
+        next: () => {
+          this.successMessage = true;
+          ngForm.resetForm();
+
+          // auto-hide after 4 seconds
+          setTimeout(() => {
+            this.successMessage = false;
+          }, 4000);
+        },
+        error: () => {
+          this.successMessage = false;
+        }
+      });
     }
   }
 }
