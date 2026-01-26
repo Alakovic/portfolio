@@ -11,6 +11,7 @@ section {
     align-items: flex-start;
     justify-content: center;
     gap: 60px;
+    overflow: hidden;
   }
 
   p,
@@ -136,6 +137,7 @@ section {
       background: transparent;
       border-radius: 25px;
       margin-top: 15px;
+  
 
       span {
         color: #fff;

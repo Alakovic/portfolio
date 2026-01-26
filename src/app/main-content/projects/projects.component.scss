@@ -48,11 +48,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: visible;
     position: absolute;
     right: 40px;
     top: 0;
-    overflow: visible;
 
     &::before {
       content: "";

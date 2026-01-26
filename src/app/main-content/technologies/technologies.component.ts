@@ -14,16 +14,16 @@ import { TranslateModule } from '@ngx-translate/core';
 
 export class TechnologiesComponent {
   technologies: Technology[] = [
-    { name: 'HTML', path: 'assets/images/technologies/html.png' },
-    { name: 'CSS', path: 'assets/images/technologies/css.png' },
-    { name: 'JavaScript', path: 'assets/images/technologies/js.png' },
-    { name: 'Material Design', path: 'assets/images/technologies/mat_design.png' },
-    { name: 'TypeScript', path: 'assets/images/technologies/ts.png' },
-    { name: 'Angular', path: 'assets/images/technologies/angular.png' },
-    { name: 'Firebase', path: 'assets/images/technologies/firebase.png' },
-    { name: 'Git', path: 'assets/images/technologies/git.png' },
-    { name: 'REST-API', path: 'assets/images/technologies/restApi.png' },
-    { name: 'Scrum', path: 'assets/images/technologies/scrum.png' },
-    { name: 'Growth mindset', path: 'assets/images/technologies/growth.png' }
+    { name: 'HTML', path: 'assets/images/technologies/HTML.svg' },
+    { name: 'CSS', path: 'assets/images/technologies/CSS.svg' },
+    { name: 'JavaScript', path: 'assets/images/technologies/JavaScript.svg' },
+    { name: 'Material Design', path: 'assets/images/technologies/Material Design.svg' },
+    { name: 'TypeScript', path: 'assets/images/technologies/TypeScript.svg' },
+    { name: 'Angular', path: 'assets/images/technologies/Angular.svg' },
+    { name: 'Firebase', path: 'assets/images/technologies/Firebase.svg' },
+    { name: 'Git', path: 'assets/images/technologies/Git.svg' },
+    { name: 'REST-API', path: 'assets/images/technologies/Rest-Api.svg' },
+    { name: 'Scrum', path: 'assets/images/technologies/Scrum.svg' },
+    { name: 'Growth mindset', path: 'assets/images/technologies/GrowthMindset.svg' }
   ];
 }
