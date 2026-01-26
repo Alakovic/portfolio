@@ -115,12 +115,28 @@ section {
 
     .error {
       position: absolute;
-      top: 70%;
+      bottom: 0;
       left: 30px;
       transform: translateY(-50%);
       color: red;
       font-size: 16px;
       pointer-events: none;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    button:disabled:hover {
+      border: 1px solid #fff;
+      cursor: not-allowed;
+    }
+
+    button:disabled span {
+      animation: none !important;
+      transform: none !important;
+      color: #fff !important;
     }
 
     button {
@@ -137,7 +153,6 @@ section {
       background: transparent;
       border-radius: 25px;
       margin-top: 15px;
-  
 
       span {
         color: #fff;

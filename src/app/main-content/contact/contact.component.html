@@ -1,6 +1,6 @@
 <section id="contact">
   <div class="section-wrapper">
-    <div class="contact" data-aos="fade-right" >
+    <div class="contact" data-aos="fade-right">
       <p>{{ "CONTACT.HEAD" | translate }}</p>
       <h1>{{ "CONTACT.TITLE" | translate }}</h1>
       <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
@@ -10,36 +10,52 @@
         }}<span>{{ "CONTACT.QUESTION_GREEN" | translate }}</span>
       </p>
     </div>
-    <div class="contact-form" data-aos="fade-left" >
+    <div class="contact-form" data-aos="fade-left">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div
           class="name"
           [class.has-error]="
-            !name.valid && (name.touched || contactForm.submitted)
+            name.invalid &&
+            (name.touched || contactForm.submitted) &&
+            !nameFocused
           "
         >
-          <label for="name">{{ "CONTACT_FORM.NAME" | translate }} </label>
+          <label for="name">{{ "CONTACT_FORM.NAME" | translate }}</label>
           <input
             #name="ngModel"
             [(ngModel)]="contactData.name"
-            type="text"
-            id="name"
-            name="name"
             [placeholder]="'CONTACT_FORM.NAME_PLACEHODER' | translate"
+            name="name"
+            type="text"
             required
+            minlength="2"
+            pattern="^[A-Za-zÀ-ž ]+$"
+            (focus)="nameFocused = true"
+            (blur)="nameFocused = false"
           />
           <span
             class="error"
-            *ngIf="!name.valid && (name.touched || contactForm.submitted)"
+            *ngIf="name.errors?.['required'] && name.touched && !nameFocused"
           >
-            {{ "CONTACT_FORM.NAME_ERROR" | translate }}
+            {{ "CONTACT_FORM.NAME_REQUIRED" | translate }}
+          </span>
+          <span
+            class="error"
+            *ngIf="name.errors?.['minlength'] && name.touched && !nameFocused"
+          >
+            {{ "CONTACT_FORM.NAME_MINLENGTH" | translate }}
+          </span>
+          <span class="error" *ngIf="name.errors?.['pattern'] && name.dirty">
+            {{ "CONTACT_FORM.NAME_PATTERN" | translate }}
           </span>
         </div>
 
         <div
           class="email"
           [class.has-error]="
-            !email.valid && (email.touched || contactForm.submitted)
+            email.invalid &&
+            (email.touched || contactForm.submitted) &&
+            !emailFocused
           "
         >
           <label for="email">{{ "CONTACT_FORM.EMAIL" | translate }}</label>
@@ -49,26 +65,36 @@
             type="email"
             id="email"
             name="email"
-            [placeholder]="'CONTACT_FORM.EMAIL' | translate"
+            [placeholder]="'CONTACT_FORM.EMAIL_PLACEHOLDER' | translate"
             required
             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+            (focus)="emailFocused = true"
+            (blur)="emailFocused = false"
           />
           <span
             class="error"
             *ngIf="
-              !email.valid &&
+              email.errors?.['required'] &&
               (email.touched || contactForm.submitted) &&
-              !email.dirty
+              !emailFocused
             "
           >
-            {{ "CONTACT_FORM.EMAIL_ERROR" | translate }}
+            {{ "CONTACT_FORM.EMAIL_REQUIRED" | translate }}
+          </span>
+          <span
+            class="error"
+            *ngIf="email.errors?.['pattern'] && email.touched && !emailFocused"
+          >
+            {{ "CONTACT_FORM.EMAIL_PATTERN" | translate }}
           </span>
         </div>
 
         <div
           class="text"
           [class.has-error]="
-            !message.valid && (message.touched || contactForm.submitted)
+            message.invalid &&
+            (message.touched || contactForm.submitted) &&
+            !messageFocused
           "
         >
           <label for="message">{{ "CONTACT_FORM.TEXT" | translate }} </label>
@@ -81,37 +107,52 @@
             [placeholder]="'CONTACT_FORM.TEXT_PLACEHOLDER' | translate"
             style="height: 25px"
             required
+            (focus)="messageFocused = true"
+            (blur)="messageFocused = false"
           ></textarea>
           <span
             class="error"
-            *ngIf="!message.valid && (message.touched || contactForm.submitted)"
+            *ngIf="
+              message.errors?.['required'] &&
+              (message.touched || contactForm.submitted) &&
+              !messageFocused
+            "
           >
-            {{ "CONTACT_FORM.TEXT_ERROR" | translate }}
+            {{ "CONTACT_FORM.TEXT_REQUIRED" | translate }}
+          </span>
+          <span
+            class="error"
+            *ngIf="
+              message.errors?.['minlength'] &&
+              message.touched &&
+              !messageFocused
+            "
+          >
+            {{ "CONTACT_FORM.TEXT_MINLENGTH" | translate }}
           </span>
         </div>
         <div
           class="check"
-          [class.has-error]="!contactData.agree && contactForm.submitted"
+          [class.has-error]="agree.invalid && contactForm.submitted"
         >
           <input
+            #agree="ngModel"
             type="checkbox"
             name="agree"
             id="agree"
             [(ngModel)]="contactData.agree"
+            required
           />
           <label for="agree"
             >{{ "CONTACT_FORM.PRIVACY" | translate }}
             <a href="imprint">{{ "CONTACT_FORM.PRIVACY_GREEN" | translate }}</a>
             {{ "CONTACT_FORM.PRIVACY_WHITE" | translate }}</label
           >
-          <span
-            class="error"
-            *ngIf="!contactData.agree && contactForm.submitted"
-          >
+          <span class="error" *ngIf="agree.invalid && contactForm.submitted">
             {{ "CONTACT_FORM.ACCEPT" | translate }}
           </span>
         </div>
-        <button type="submit">
+        <button type="submit" [disabled]="contactForm.invalid">
           <span>{{ "CONTACT_FORM.BUTTON" | translate }}</span>
         </button>
       </form>
