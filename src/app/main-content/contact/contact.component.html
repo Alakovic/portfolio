@@ -1,6 +1,6 @@
 <section id="contact">
   <div class="section-wrapper">
-    <div class="contact">
+    <div class="contact" data-aos="fade-right" data-aos-duration="2000">
       <p>{{ "CONTACT.HEAD" | translate }}</p>
       <h1>{{ "CONTACT.TITLE" | translate }}</h1>
       <h3>{{ "CONTACT.QUESTION" | translate }}</h3>
@@ -10,7 +10,7 @@
         }}<span>{{ "CONTACT.QUESTION_GREEN" | translate }}</span>
       </p>
     </div>
-    <div class="contact-form">
+    <div class="contact-form" data-aos="fade-left" data-aos-duration="2000">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div
           class="name"

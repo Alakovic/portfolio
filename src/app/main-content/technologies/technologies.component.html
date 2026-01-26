@@ -1,6 +1,6 @@
 <section id="technologies">
   <div class="section-wrapper">
-    <div class="info">
+    <div class="info" data-aos="fade-down-right" data-aos-duration="2000">
       <span class="tech">{{"TECHNOLOGIES.TECH" | translate}}</span>
       <mat-card>
         <mat-card-header>
@@ -27,10 +27,10 @@
         class="tech-icon-item"
         *ngFor="let tech of technologies; let isLast = last"
       >
-        <div class="icon">
+        <div class="icon" data-aos="flip-up" data-aos-duration="1500">
           <img src="{{ tech.path }}" alt="" />
         </div>
-        <div class="text">
+        <div class="text" data-aos="flip-up" data-aos-duration="1500" >
           <span>{{ tech.name }}</span>
         </div>
       </div>
