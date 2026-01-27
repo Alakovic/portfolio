@@ -1,0 +1,22 @@
+section {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+
+  .section-wrapper {
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  h1 {
+    text-align: center;
+    color: #3dcfb6;
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 20px;
+  }
+}
