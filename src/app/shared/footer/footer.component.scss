@@ -1,5 +1,5 @@
 section {
-  padding: 30px 20px;
+  padding: 30px;
   display: flex;
   justify-content: center;
 
@@ -21,10 +21,6 @@ section {
     gap: 20px;
   }
 
-  span {
-    padding-left: 10px;
-  }
-  
   .left,
   .right {
     display: flex;
@@ -114,7 +110,15 @@ section {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1440px) {
+  section {
+    .section-wrapper {
+      padding: 0 0;
+    }
+  }
+}
+
+@media (max-width: 670px) {
   section {
     .section-wrapper {
       flex-wrap: wrap;
@@ -125,15 +129,6 @@ section {
         font-size: 15px;
       }
       .logo-container {
-        .logo-letters {
-          .letter-a {
-            font-size: 40px;
-            top: 10px;
-          }
-          .letter-z {
-            font-size: 40px;
-          }
-        }
         .full-name {
           span {
             font-size: 25px;
@@ -158,48 +153,31 @@ section {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 435px) {
   section {
-    .section-wrapper {
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .left {
-      span {
-        font-size: 10px;
-      }
+    padding: 15px;
+  }
+
+  section .section-wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 365px) {
+  section {
+     .left {
       .logo-container {
-        .logo-letters {
-          width: 30px;
-          height: 30px;
-          .letter-a {
-            font-size: 20px;
-            top: 5px;
-          }
-          .letter-z {
-            font-size: 20px;
-          }
+        .logo-letters{
+          width: 50px;
+          height: 50px;
         }
         .full-name {
           span {
-            font-size: 15px;
+            font-size: 18px;
           }
         }
       }
     }
-
-    .midd {
-      order: 3;
-      width: 100%;
-      text-align: center;
     }
-
-    .right {
-      align-self: flex-start;
-    }
-
-    .right a {
-      font-size: 11px;
-    }
-  }
 }
+
