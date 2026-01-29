@@ -1,22 +1,16 @@
 <section>
-  <div class="headline"><h1>{{"REFERENCES.HEADLINE" | translate}}</h1></div>
+  <div class="headline">
+    <h1>{{ "REFERENCES.HEADLINE" | translate }}</h1>
+  </div>
   <div class="carousel">
+    <div class="quote-mark">“</div>
     <div class="track">
-      <div class="track">
-        <div class="slide left">
-          <app-single-reference [reference]="prevReference">
-          </app-single-reference>
-        </div>
-
-        <div class="slide active">
-          <app-single-reference [reference]="currentReference">
-          </app-single-reference>
-        </div>
-
-        <div class="slide right">
-          <app-single-reference [reference]="nextReference">
-          </app-single-reference>
-        </div>
+      <div
+        class="slide"
+        *ngFor="let ref of references; let i = index"
+        [ngClass]="getSlideClass(i)"
+      >
+        <app-single-reference [reference]="ref"></app-single-reference>
       </div>
     </div>
   </div>

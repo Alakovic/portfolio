@@ -11,6 +11,7 @@ mat-card {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  margin-top: 50px;
 
   mat-card-content {
     padding: 0px;
@@ -25,12 +26,12 @@ mat-card {
     gap: 10px;
     .line {
       height: 1px;
-      min-width: 10px;
+      min-width: 3px;
       background-color: #fff;
     }
     .line1 {
       height: 1px;
-      min-width: 20px;
+      min-width: 1px;
       background-color: #fff;
       flex: 1;
     }
@@ -48,56 +49,39 @@ mat-card {
   }
 }
 
-@media (max-width: 845px) {
-  mat-card {
-    width: 400px;
-  }
-}
-
 @media (max-width: 620px) {
   mat-card {
     width: 350px;
+    padding: 10px;
 
     mat-card-content {
-      padding-top: 20px;
-      font-size: 13px;
+      padding-top: 25px;
     }
-
     mat-card-footer.footer {
-      font-size: 13px;
+      gap: 5px;
+      .name,.role{
+        font-size: 14px;
+      }
     }
-    
   }
 }
 
-@media (max-width:465px) {
+@media (max-width: 475px) {
   mat-card {
     width: 300px;
-
-    mat-card-content {
-      padding-top: 20px;
-      font-size: 13px;
+  mat-card-footer.footer {
+      gap: 0px;
     }
-
-    mat-card-footer.footer {
-      font-size: 11px;
-    }
-    
   }
 }
 
-@media (max-width:390px) {
+@media (max-width: 390px) {
   mat-card {
     width: 250px;
-
-    mat-card-content {
-      padding-top: 20px;
-      font-size: 10px;
+      mat-card-footer.footer {
+      .name,.role{
+        font-size: 12px;
+      }
     }
-
-    mat-card-footer.footer {
-      font-size: 8px;
-    }
-    
   }
 }
