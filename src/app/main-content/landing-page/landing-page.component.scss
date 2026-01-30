@@ -282,7 +282,7 @@ h2 {
   .buttons {
     button {
       a {
-        font-size: 15px;
+        font-size: 16px;
       }
     }
   }
@@ -294,16 +294,17 @@ h2 {
       font-size: 35px;
     }
     h2 {
-      font-size: 15px;
+      font-size: 16px;
     }
   }
-
-  .buttons {
-    button {
-      a {
-        font-size: 10px;
-      }
+  .buttons{
+    padding-top: 0px;
+    gap:10px;
+    button{
+      padding: 0 10px;
+      height: 40px;
     }
+  
   }
 }
 
@@ -311,9 +312,6 @@ h2 {
   section {
     h1 {
       font-size: 30px;
-    }
-    h2 {
-      font-size: 15px;
     }
   }
 }
