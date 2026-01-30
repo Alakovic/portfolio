@@ -37,8 +37,6 @@ $portfolio-theme: mat.define-light-theme(
 @include mat.all-component-themes($portfolio-theme);
 
 * {
-  margin: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "FiraCode Regular", "Karla Regular";
 }
@@ -74,4 +72,48 @@ body {
 .no-scroll {
   overflow: hidden;
 }
+
+/* ===== CROSS-BROWSER BASELINE (SAFE) ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* SAFE HEIGHT (Safari + Firefox mobile) */
+.full-height {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* SCROLLBAR (Firefox) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #999 transparent;
+}
+
+/* SCROLLBAR (Chrome / Safari / Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* GLASS EFFECT FALLBACK */
+.glass {
+  background: rgba(255,255,255,0.85);
+}
+
+@supports (backdrop-filter: blur(12px)) {
+  .glass {
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.6);
+  }
+}
+
+
 
