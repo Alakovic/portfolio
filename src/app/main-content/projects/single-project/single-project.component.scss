@@ -27,7 +27,9 @@
   .close-icon {
     color: white;
     cursor: pointer;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition:
+      color 0.2s ease,
+      transform 0.2s ease;
     position: absolute;
     top: 40px;
     right: 60px;
@@ -47,6 +49,7 @@
       font-size: 100px;
       font-weight: bold;
       font-family: "Karla Regular" !important;
+      margin: 0;
     }
 
     h2 {
@@ -55,6 +58,7 @@
       font-weight: bold;
       font-family: "FiraCode Regular" !important;
       padding-bottom: 30px;
+      margin: 0;
     }
 
     p {
@@ -63,6 +67,7 @@
       font-weight: bold;
       font-family: "Karla Regular" !important;
       padding-bottom: 30px;
+      margin: 0;
     }
 
     span {
@@ -213,13 +218,13 @@
   }
 }
 
-@media(max-width:767px) {
-  .content{
-    .project-info{
-      h1{
+@media (max-width: 767px) {
+  .content {
+    .project-info {
+      h1 {
         font-size: 70px;
       }
-      h2{
+      h2 {
         font-size: 50px;
       }
     }
@@ -238,26 +243,26 @@
 }
 
 @media (max-width: 400px) {
- .content{
-  .links{
-     gap: 8px;
-    button{
-      a{
-         font-size: 12px;
+  .content {
+    .links {
+      gap: 8px;
+      button {
+        a {
+          font-size: 12px;
+        }
       }
     }
   }
- }
 }
 
 @media (max-width: 347px) {
- .content{
-  .links{
-    button{
-      a{
-         font-size:9px;
+  .content {
+    .links {
+      button {
+        a {
+          font-size: 9px;
+        }
       }
     }
   }
- }
 }
